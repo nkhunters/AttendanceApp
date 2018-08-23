@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddStudent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:theme="@style/toolbartheme">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".activities.AddStudent"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:id="@+id/institute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dip"
+                    android:textColorHint="@color/colorBlue"
+                    android:backgroundTint="@color/colorBlack"
+                    android:textColor="@color/colorBlue"
+                    android:textCursorDrawable="@color/colorBlue"
+                    android:hint="Select Branch"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <EditText
+                    android:id="@+id/studName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dip"
+                    android:textColorHint="@color/colorBlue"
+                    android:backgroundTint="@color/colorBlack"
+                    android:textColor="@color/colorBlue"
+                    android:textCursorDrawable="@color/colorBlue"
+                    android:hint="Student's Name"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/studRollno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dip"
+                    android:hint="Roll No."
+                    android:textColorHint="@color/colorBlue"
+                    android:backgroundTint="@color/colorBlack"
+                    android:textColor="@color/colorBlue"
+                    android:textCursorDrawable="@color/colorBlue"
+                    android:inputType="number"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/batch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dip"
+                    android:textColorHint="@color/colorBlue"
+                    android:backgroundTint="@color/colorBlack"
+                    android:textColor="@color/colorBlue"
+                    android:textCursorDrawable="@color/colorBlue"
+                    android:hint="Select Batch"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/addStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dip"
+                android:text="Submit"
+                android:background="@color/colorBlue"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codelaxy.attendanceapp">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.LoginAdmin"
+            android:label="@string/title_activity_login_admin" />
+        <activity android:name=".activities.DashboardActivity" />
+        <activity android:name=".activities.MainActivity" />
+        <activity
+            android:name=".activities.Enquiry"
+            android:label="Enquiry Form" />
+        <activity android:name=".activities.AdminPanel" />
+        <activity android:name=".activities.DashboardAdmin" />
+        <activity
+            android:name=".activities.ShowDialog"
+            android:label="Attendance" />
+        <activity
+            android:name=".activities.VerifyAttendance"
+            android:label="Absent Students" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:label="Register" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="Login" />
+        <activity android:name=".activities.Attendance" />
+        <activity android:name=".activities.Admission"></activity>
+        <activity
+            android:name=".activities.EnquiryHistory"
+            android:label="Check History">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.AddStudent"></activity>
+        <activity android:name=".activities.ShowEnquiryHistory"></activity>
+    </application>
+
+</manifest>

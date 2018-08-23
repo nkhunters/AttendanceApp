@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ShowEnquiryHistory"
+    android:id="enqHistoryTable">
+
+    <TableRow
+        android:id="@+id/row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="hello"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="hello2"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="hello3"
+            android:layout_margin="20dp"/>
+    </TableRow>
+</TableLayout>
